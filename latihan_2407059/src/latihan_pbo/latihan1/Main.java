@@ -1,22 +1,33 @@
 package latihan_pbo.latihan1;
 
-class Cafe{
-    String nama;
-    String alamat;
 
-// constructor
-    Cafe(String nama,String alamat){
-        this.nama = nama;
-        this.alamat = alamat;
-        System.out.println(nama);
-        System.out.println(alamat);
+class Cafe{
+    String Nama;
+    String Alamat;
+
+    Cafe(String Nama, String Alamat){
+        this.Nama = Nama;
+        this.Alamat = Alamat;
+        System.out.println("nama cafenya adalah " + this.Nama);
+        System.out.println("alamatnya ada di daerah: " + this.Alamat);
     }
 }
+
+//kelas main adalah untuk menampilkan program yang akan kita buat
 public class Main {
     public static void main(String[] args) {
+        Cafe cafe1 = new Cafe("Kopi Kenangan", "Indramayu");
+        Cafe cafe2 = new Cafe("Tomoro Coffee", "Indramayu");
+        // cafe1.Nama = "Kopi Kenangan";
+        // cafe1.Alamat = "Indramayu";
+        // cafe2.Nama = "kopte";
+        // cafe2.Alamat = "IMKOT";
 
-        Cafe cafe1 = new Cafe("Janji Jiwa", "Indramayu");
-        Cafe cafe2 = new Cafe( "Tomoro Coffe",  "Riau");
+        // System.out.println("============cafe1===============");
+        // System.out.println("nama cafenya adalah" + cafe1.Nama);
+        // System.out.println("alamatnya ada di kabupaten: " + cafe1.Alamat);
+        // System.out.println("============cafe2===============");
+        // System.out.println("nama cafenya adalah " + cafe2.Nama);
+        // System.out.println("alamatnya ada di daerah: " + cafe2.Alamat);
     }
 }
-        
